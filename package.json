@@ -1,0 +1,24 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "- Preflight : CSS Riset\r - Layout\r - FLexbox & Grid\r - Spacing & Sizing\r - Typograhy\r - Background & Borders\r - Effext & Filters\r - Transition, Transformation & Animation\r - Tabels\r - .......",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexchandrahanif/tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexchandrahanif/tailwind/issues"
+  },
+  "homepage": "https://github.com/Alexchandrahanif/tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
