@@ -4,9 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+        /* border: 2px solid; */
+      }
+    </style>
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            colors: {
+              ach: "#bada55",
+            },
+          },
+        },
+      };
+    </script> -->
     <title>Tailwind CSS</title>
   </head>
   <body>
-    <h2 class="text-4xl">Hello World!!</h2>
+    <!-- Padding dan Margin -->
+    <section>
+      <div class="flex m-auto justify-center items-center">
+        <h1 class="text-center text-8xl font-bold mx-10">
+          <span
+            class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent"
+          >
+            Tailwind
+          </span>
+          CSS
+        </h1>
+      </div>
+    </section>
+
+    <!-- display flex, 3 kotak yg width nya 1/3 dari parent -->
+    <section class="flex mb-5">
+      <div class="w-1/3 h-32 bg-orange-800">
+        <p>kotak 1</p>
+      </div>
+      <div class="w-1/3 h-32 bg-yellow-300">
+        <p>kotak 2</p>
+      </div>
+      <div class="w-1/3 h-32 bg-gradient-to-r from-red-400 to-blue-500">
+        <p>kotak 3</p>
+      </div>
+    </section>
+
+    <!-- Typography -->
+
+    <section class="max-w-sm">
+      <p class="text-3xl font-bold">Belajar Tailwind CSS</p>
+      <p class="mb-5 font-semibold text-sm hover:text-red-900 hover:uppercase">
+        <a
+          href="https://www.linkedin.com/in/alex-chandra-hanif-aa9955236/"
+          class="underline bg-slate-300"
+        >
+          Alex Chandra Hanif
+        </a>
+      </p>
+
+      <p class="mb-5 font-mono text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A, asperiores
+        incidunt quis necessitatibus eum ea exercitationem accusantium ut
+        deserunt nisi beatae reprehenderit magni repellat doloremque sunt
+        nostrum, laborum molestiae expedita maiores dolorem. Earum dignissimos
+        obcaecati voluptas ipsa sint inventore optio repellat molestiae
+        consequatur ipsum. Sit perspiciatis quis natus odit quos voluptates
+        quisquam, hic id commodi amet cum necessitatibus voluptatibus.
+      </p>
+
+      <p class="mb-5 font-serif text-justify">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, sunt?
+        Labore tempora atque nulla reprehenderit ab nisi dolorum molestiae
+        neque.
+      </p>
+    </section>
+
+    <!-- Unility 2 (Background) -->
+    <section>
+      <!-- overflow-scroll bg-scroll -->
+      <p class="mx-10 font-bold">Overflow-Scroll bg-scroll</p>
+      <div
+        class="max-w-xl h-96 bg-[#bada55] mb-[100px] mx-10 rounded-lg overflow-y-scroll bg-scroll"
+        style="
+          background-image: url('https://source.unsplash.com/1000x600?computer');
+        "
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis
+          dolores quisquam rerum voluptate dolorum. Quia, totam maxime a
+          recusandae magnam explicabo harum ducimus voluptatem perspiciatis
+          iusto architecto, dignissimos quo temporibus molestias, adipisci cum
+          accusantium ipsum voluptate! Repudiandae quasi quia pariatur. Eveniet
+          esse non culpa provident consequatur est maiores harum assumenda illum
+          ut, cupiditate nobis porro molestias, excepturi fugit facere tempore
+          vel natus nemo. A quo iusto reiciendis iure reprehenderit? Minima
+          omnis praesentium, doloremque odio, in necessitatibus incidunt
+          sapiente ea obcaecati veritatis, voluptate quasi magnam qui officia
+          possimus sequi cum illo iusto assumenda. Error eos nam quia aut rem,
+          minima amet similique cumque sit. Ex voluptas repudiandae molestiae
+          numquam corrupti accusantium voluptatum beatae et nihil, tempore
+          voluptatem perferendis laborum provident sint, adipisci eveniet ea
+          quaerat quis! Ullam nam minus ex eaque pariatur modi sit deleniti
+          doloremque eveniet ad? Enim, explicabo amet? Necessitatibus ducimus
+          quasi, id est in iusto asperiores! At hic aliquam eveniet repudiandae
+          debitis quas exercitationem odio, sit illo sed velit quibusdam
+          possimus doloribus consectetur voluptate officia ratione sapiente
+          iste, vitae impedit nulla aliquid. Quibusdam laboriosam suscipit quis
+          et! Deserunt doloremque modi obcaecati autem, beatae eos mollitia at
+          nisi fuga sunt! Adipisci iure laboriosam voluptatem maiores facere
+          minima accusamus!
+        </p>
+      </div>
+
+      <!-- overflow-scroll bg-local -->
+      <p class="mx-10 font-bold">Overflow-local bg-local</p>
+      <div
+        class="max-w-xl h-96 bg-[#bada55] mb-[150px] mx-10 rounded-lg overflow-y-scroll bg-local"
+        style="
+          background-image: url('https://source.unsplash.com/1000x600?gray');
+        "
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis
+          dolores quisquam rerum voluptate dolorum. Quia, totam maxime a
+          recusandae magnam explicabo harum ducimus voluptatem perspiciatis
+          iusto architecto, dignissimos quo temporibus molestias, adipisci cum
+          accusantium ipsum voluptate! Repudiandae quasi quia pariatur. Eveniet
+          esse non culpa provident consequatur est maiores harum assumenda illum
+          ut, cupiditate nobis porro molestias, excepturi fugit facere tempore
+          vel natus nemo. A quo iusto reiciendis iure reprehenderit? Minima
+          omnis praesentium, doloremque odio, in necessitatibus incidunt
+          sapiente ea obcaecati veritatis, voluptate quasi magnam qui officia
+          possimus sequi cum illo iusto assumenda. Error eos nam quia aut rem,
+          minima amet similique cumque sit. Ex voluptas repudiandae molestiae
+          numquam corrupti accusantium voluptatum beatae et nihil, tempore
+          voluptatem perferendis laborum provident sint, adipisci eveniet ea
+          quaerat quis! Ullam nam minus ex eaque pariatur modi sit deleniti
+          doloremque eveniet ad? Enim, explicabo amet? Necessitatibus ducimus
+          quasi, id est in iusto asperiores! At hic aliquam eveniet repudiandae
+          debitis quas exercitationem odio, sit illo sed velit quibusdam
+          possimus doloribus consectetur voluptate officia ratione sapiente
+          iste, vitae impedit nulla aliquid. Quibusdam laboriosam suscipit quis
+          et! Deserunt doloremque modi obcaecati autem, beatae eos mollitia at
+          nisi fuga sunt! Adipisci iure laboriosam voluptatem maiores facere
+          minima accusamus!
+        </p>
+      </div>
+
+      <!-- overflow-scroll bg-fixed -->
+      <p class="mx-10 font-bold">Overflow-local bg-fixed</p>
+      <div
+        class="max-w-xl h-96 bg-[#bada55] mb-[150px] mx-10 rounded-lg overflow-y-scroll bg-fixed"
+        style="
+          background-image: url('https://source.unsplash.com/1000x600?white');
+        "
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nobis
+          dolores quisquam rerum voluptate dolorum. Quia, totam maxime a
+          recusandae magnam explicabo harum ducimus voluptatem perspiciatis
+          iusto architecto, dignissimos quo temporibus molestias, adipisci cum
+          accusantium ipsum voluptate! Repudiandae quasi quia pariatur. Eveniet
+          esse non culpa provident consequatur est maiores harum assumenda illum
+          ut, cupiditate nobis porro molestias, excepturi fugit facere tempore
+          vel natus nemo. A quo iusto reiciendis iure reprehenderit? Minima
+          omnis praesentium, doloremque odio, in necessitatibus incidunt
+          sapiente ea obcaecati veritatis, voluptate quasi magnam qui officia
+          possimus sequi cum illo iusto assumenda. Error eos nam quia aut rem,
+          minima amet similique cumque sit. Ex voluptas repudiandae molestiae
+          numquam corrupti accusantium voluptatum beatae et nihil, tempore
+          voluptatem perferendis laborum provident sint, adipisci eveniet ea
+          quaerat quis! Ullam nam minus ex eaque pariatur modi sit deleniti
+          doloremque eveniet ad? Enim, explicabo amet? Necessitatibus ducimus
+          quasi, id est in iusto asperiores! At hic aliquam eveniet repudiandae
+          debitis quas exercitationem odio, sit illo sed velit quibusdam
+          possimus doloribus consectetur voluptate officia ratione sapiente
+          iste, vitae impedit nulla aliquid. Quibusdam laboriosam suscipit quis
+          et! Deserunt doloremque modi obcaecati autem, beatae eos mollitia at
+          nisi fuga sunt! Adipisci iure laboriosam voluptatem maiores facere
+          minima accusamus!
+        </p>
+      </div>
+    </section>
   </body>
 </html>
