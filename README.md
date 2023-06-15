@@ -81,3 +81,9 @@
 6. Mix Blend Mode (menggabungkan 1 bg-color dan 1 bg-image) : https://tailwindcss.com/docs/mix-blend-mode
 
 7. Filter (blur, dll) : https://tailwindcss.com/docs/blur
+
+### Pseudo-class dan dark-mode
+
+1. Hover, focus, and Other States : https://tailwindcss.com/docs/hover-focus-and-other-states
+
+2. Mengatur Hover dalam group : https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state

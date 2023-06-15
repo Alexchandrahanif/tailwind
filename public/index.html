@@ -54,7 +54,6 @@
     </section>
 
     <!-- Typography -->
-
     <section class="max-w-sm">
       <p class="text-3xl font-bold">Belajar Tailwind CSS</p>
       <p class="mb-5 font-semibold text-sm hover:text-red-900 hover:uppercase">
@@ -188,6 +187,61 @@
           nisi fuga sunt! Adipisci iure laboriosam voluptatem maiores facere
           minima accusamus!
         </p>
+      </div>
+    </section>
+
+    <hr class="my-2" />
+    <!-- Psuedo-class dan dark-mode -->
+
+    <section class="py-20">
+      <!-- ketika normal bg-sky-500, ketika di hover berubah menjadi 700 dan ketika di clik menjadi 900, dan focus ketika button sudah di click -->
+
+      <div class="flex justify-center border border-3 border-y-blue-950">
+        <button
+          class="px-6 py-2 bg-sky-500 rounded-lg text-white hover:bg-sky-700 active:bg-sky-900 focus:ring-2 focus:ring-sky-700"
+        >
+          Simpan
+        </button>
+      </div>
+
+      <!-- Cara membuat state dalam group, dengan menuliskan group pada paren, dan group-hover: pada child -->
+      <div class="flex justify-center p-5">
+        <div
+          class="bg-sky-300 max-w-xl rounded-lg p-5 hover:bg-sky-800 group shadow-lg"
+        >
+          <h3 class="font-mono font-bold text-3xl group-hover:text-white">
+            My Card
+          </h3>
+          <p
+            class="font-mono text-justify group-hover:text-white selection:bg-red-700 selection:text-black first-line:uppercase first-letter:text-7xl first-letter:float-left"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, enim
+            vitae placeat nulla alias inventore deserunt maxime, beatae sit
+            porro ea expedita minus at sed maiores repellat error. Aliquid, vel.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-xl bg-slate-100 mx-auto rounded-md p-5 shadow">
+        <form action="">
+          <label for="email">
+            <p
+              class="text-sm m-1 text-slate-600 after:content-['*'] after:text-pink-700 after:font-bold"
+            >
+              Email
+            </p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="masukan email"
+              class="text-sm w-full p-2 rounded-md shadow focus:outline-none focus:ring-1 focus:ring-sky-900 invalid:text-pink-600 peer"
+            />
+            <p class="text-pink-700 text-xs m-1 invisible peer-invalid:visible">
+              Email Invalid
+            </p>
+          </label>
+        </form>
       </div>
     </section>
   </body>
