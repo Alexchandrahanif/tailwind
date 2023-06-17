@@ -1,12 +1,14 @@
 ### Jakarta, 11 Juni 2023
 
-### Tailwind : A Utulity-first CSS Framework that packed with classes
+    Tailwind : A Utulity-first CSS Framework that packed with classes
 
 ### Installation TailwindCSS
 
-- https://tailwindcss.com/docs/installation
+    https://tailwindcss.com/docs/installation
 
 ### Utilities :
+
+    Berikut adalah beberapa untili yang bakal dibahas dalam materi kali ini :
 
 - Preflight : CSS Riset
 - Layout
@@ -21,6 +23,8 @@
 
 ### Features
 
+    Disini juga kita akan membahas beberapa fitur yang ada di tailwindcss
+
 - Interactivity
 - Responsive Design
 - Dark Mode
@@ -30,6 +34,8 @@
 
 ### Pseudo-classes Interactivity
 
+    Untuk Pseudo-class ada beberapa, diantaranya :
+
 - hover
 - focus
 - active
@@ -38,6 +44,8 @@
 - ..........
 
 ### Pseudo-element Interactivity
+
+    Untuk Pseudo-element juga ada beberapa, diantaranya :
 
 - before
 - after
@@ -87,3 +95,31 @@
 1. Hover, focus, and Other States : https://tailwindcss.com/docs/hover-focus-and-other-states
 
 2. Mengatur Hover dalam group : https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state
+
+3. Dark Mode (Jangan lupa cdn) : https://tailwindcss.com/docs/dark-mode
+
+### Transform, Transition, Animation
+
+1. Transform : Perubahan ukuran, rotasi dan posisi
+
+- Scale (ukuran) : https://tailwindcss.com/docs/scale
+- Rotate (rotasi) : https://tailwindcss.com/docs/rotate
+- Translate (letak/posisi) : https://tailwindcss.com/docs/translate
+- Skew (Kemiringan) : https://tailwindcss.com/docs/skew
+- Origin (sumbu) : https://tailwindcss.com/docs/origin
+
+2. Transition : https://tailwindcss.com/docs/transition-property
+
+3. Animation : https://tailwindcss.com/docs/animation
+
+### Layouting
+
+1. Container (element pembungkus) : https://tailwindcss.com/docs/container
+
+### Responsive Design
+
+### Flexbox
+
+### GRID
+
+### Functions & Directives
